@@ -13,10 +13,11 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class ListViewAdapter extends ArrayAdapter<Product> {
-    public ListViewAdapter(@NonNull Context context, int resource, @NonNull List<Product> objects) {
+public class GridViewAdapter extends ArrayAdapter<Product> {
+    public GridViewAdapter(@NonNull Context context, int resource, @NonNull List<Product> objects) {
         super(context, resource, objects);
     }
+
 
     @NonNull
     @Override
@@ -26,7 +27,7 @@ public class ListViewAdapter extends ArrayAdapter<Product> {
 
         if (null == v){
             LayoutInflater inflater =(LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            v = inflater.inflate(R.layout.list_item,null);
+            v = inflater.inflate(R.layout.grid_item,null);
         }
 
         Product product = getItem(position);
