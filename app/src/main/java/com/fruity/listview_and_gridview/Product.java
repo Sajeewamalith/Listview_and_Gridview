@@ -1,12 +1,12 @@
 package com.fruity.listview_and_gridview;
 
-public class product {
+public class Product {
 
     private int imageId;
     private String title;
     private String description;
 
-    public product(int imageId, String title, String description) {
+    public Product(int imageId, String title, String description) {
         this.imageId = imageId;
         this.title = title;
         this.description = description;
